@@ -13,7 +13,7 @@ bot = commands.Bot(
     intents = intents # Set up basic permissions
 )
 
-bot.author_id = 243073666630287360  # Change to your discord id
+bot.author_id = ""  # Change to your discord id
 
 @bot.event
 async def on_ready():  # When the bot is ready
@@ -86,7 +86,6 @@ async def poll(ctx, question, time_limit=None):
 
 @bot.command()
 async def prompt(ctx, *, prompt_text):
-    ChatGptApiKey = "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"
     data = {
     "prompt": ChatGptApiKey,
     "model": "text-davinci-003"}
